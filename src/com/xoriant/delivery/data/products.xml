@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Product>
+    <brand>
+        <brandId>2</brandId>
+        <brandName>SAMSUNG</brandName>
+        <category>
+            <categoryId>1</categoryId>
+            <categoryName>SMARTPHONES</categoryName>
+        </category>
+    </brand>
+    <category>
+        <categoryId>1</categoryId>
+        <categoryName>SMARTPHONES</categoryName>
+    </category>
+    <description>curve edges</description>
+    <price>52000.0</price>
+    <productId>5</productId>
+    <productName>SAMSUNG GALAXY S2</productName>
+</Product>

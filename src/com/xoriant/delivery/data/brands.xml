@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Brand>
+    <brandId>2</brandId>
+    <brandName>SAMSUNG</brandName>
+    <category>
+        <categoryId>1</categoryId>
+        <categoryName>SMARTPHONES</categoryName>
+    </category>
+</Brand>
