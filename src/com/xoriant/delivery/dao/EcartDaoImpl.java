@@ -1,7 +1,10 @@
 package com.xoriant.delivery.dao;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -1156,5 +1159,32 @@ public class EcartDaoImpl {
 			out.close();
 		}
 		return list;
+	}
+	
+	public List<Product> readDataFromCsvFile() {
+		String userDefPath = "C:\\Users\\" + System.getProperty("user.name") + "\\Desktop";
+		File file = new File(userDefPath + "\\products.csv");
+		BufferedReader reader = null;
+		String line = "";
+		try {
+			reader = new BufferedReader(new FileReader(file));
+			while ((line = reader.readLine()) != null) {
+				String[] row = line.split(",");
+				for (String index : row) {
+					System.out.printf("%-20s", index);
+				}
+				System.out.println();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				reader.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		return null;
+
 	}
 }

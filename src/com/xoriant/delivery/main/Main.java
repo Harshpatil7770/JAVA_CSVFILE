@@ -47,6 +47,7 @@ public class Main {
 			System.out.println("28) Fetch Product In between Price Range and Write it CSV FILE");
 			System.out.println("29) Fetch Product above Price Range and Write it CSV FILE");
 			System.out.println("30) Fetch Product below Price Range and Write it CSV FILE");
+			System.out.println("31) Read Data From CSV File");
 
 			System.out.println("\n Enter Your Choice :: ");
 			int ch = InputValidation.inputIntegerValidation();
@@ -154,6 +155,10 @@ public class Main {
 			case 30:
 				System.out.println("You have selected  30)  Fetch Product Above The Price Range and Write it CSV FILE");
 				ecartUtility.fetchProductAboveThePriceRange();
+				break;
+			case 31:
+				System.out.println("You have selected  31)  Read Data From CSV FILE");
+				ecartDaoImpl.readDataFromCsvFile();
 				break;
 			default:
 				System.out.println("==============================================");
